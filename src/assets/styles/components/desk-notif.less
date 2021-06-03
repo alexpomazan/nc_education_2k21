@@ -12,11 +12,18 @@
             display: flex;
         }
         .covid{
-            display: flex;
-            flex-direction: column;
+            &__title{
+                margin-bottom: 6px;
+            }
             &-histogram{
                 height: 1em;
             }
+            &-desc{
+                &__count{
+                    font-weight: 700;
+                }
+            }
+
         }
         .shifted-yes{
             &:hover{
@@ -27,8 +34,6 @@
                 color: @black;
             }
         }
-    }
-    &__usermenu{
     }
 }
     .card{
@@ -82,8 +87,6 @@
                     color: red;
                 }
             }
-            
-            
             .avatar{
                 position: absolute;
                 top: 8px;
@@ -106,6 +109,8 @@
         &__details{
             margin-bottom: 1px;
             &.covid{
+                display: flex;
+                flex-direction: column;
                 justify-content:space-between;
                 flex-direction: row-reverse;
             }
@@ -120,14 +125,10 @@
                 padding: 0 4px;
             }
         }
-        &__mail-title{
-
-        }
         &__mail-count{
             font-weight: 700;
             padding-left: .6em;
         }
-        &__covid{}
     }
 
 @media (min-width: 1600px){

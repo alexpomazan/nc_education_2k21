@@ -9,7 +9,7 @@
   <body>
     <div class="wrapper">
       <div class="desk-notif">
-        <div class="desk-notif__card user">
+        <div class="desk-notif__card card">
           <div class="card__content">
             <div class="card__title">
               <a class="link desk-notif__usermenu" href="">
@@ -21,7 +21,7 @@
                 <span class="avatar__image"></span>
               </a>
             </div>
-            <div class="card__details">
+            <div class="card__details details">
               <div class="details__item details__item-mail">
                 <a class="link _black" href="">
                   <span class="details__mail-title">Почта</span>
@@ -34,7 +34,7 @@
             </div>
           </div>
         </div>
-        <div class="desk-notif__card">
+        <div class="desk-notif__card card">
           <div class="card__content plus shifted-yes">
             <a class="link _black plus" href="">
             <div class="card__text">Плюс</div>
@@ -42,18 +42,18 @@
           </a>
           </div>
         </div>
-        <div class="desk-notif__card">
-          <div class="card__content covid shifted-yes">
-            <a class="link _black covid" href="">
-              <div class="card__title _bold">Коронавирус в России</div>
+        <div class="desk-notif__card card">
+          <div class="card__content shifted-yes">
+            <a class="link _black card__link covid" href="">
+              <div class="card__title covid__title _bold">Коронавирус в России</div>
               <div class="card__details covid">
                 <div class="details__covid small-hist">
                   <svg class="covid-histogram" width="41" height="36">
                     <use href="#icon-covid-histogram"></use>
                   </svg>
                 </div>
-                <div class="details__covid histogram-desc">
-                  <span class="histogram-desc__count">+8475</span> выявлено
+                <div class="details__covid covid-desc">
+                  <span class="covid-desc__count">+8475</span> выявлено
                 </div>
               </div>
             </a>
@@ -63,7 +63,7 @@
       <div class="headline">
         <div class="headline__item headline__leftcorner">
           <a class="headline__geolink link" href="">
-            <svg class="geolink__button" width="16" height="16">
+            <svg class="geolink__button">
               <use href="#icon-geolink"></use>
             </svg>
             <span class="geolink__reg">Москва</span>
@@ -95,7 +95,7 @@
       </div>
       <div class="widgets container">
         <div class="widgets__col td-0">
-        <div class="widgets__news widget">
+        <div class="news widgets__news widget">
           <div class="news__tabs">
             <h1 class="news__head-item">
               <a class="link _blue" href=""
@@ -117,9 +117,8 @@
             <ol class="list news__list">
               <li class="list__item">
                 <a href="" class="link _black">
-                  <svg class="news__agency-icon" width="14" height="14">
-                    <use href="#icon-rbk"></use>
-                  </svg>
+                  <span class="news__agency-icon inter">
+                  </span>
                   <span class="news__item-content"
                     >Путин прокомментировал ситуацию с рейсом Ryanair словами
                     «всплеск эмоций»</span
@@ -128,9 +127,8 @@
               </li>
               <li class="list__item">
                 <a href="" class="link _black">
-                  <svg class="news__agency-icon" width="14" height="14">
-                    <use href="#icon-rbk"></use>
-                  </svg>
+                  <span class="news__agency-icon rt">
+                  </span>
                   <span class="news__item-content">
                     Поклонская сняла свою кандидатуру с праймериз «Единой
                     России»
@@ -139,9 +137,8 @@
               </li>
               <li class="list__item">
                 <a href="" class="link _black">
-                  <svg class="news__agency-icon" width="14" height="14">
-                    <use href="#icon-rbk"></use>
-                  </svg>
+                  <span class="news__agency-icon rt">
+                  </span>
                   <span class="news__item-content">
                     Пострадавшая при стрельбе в Екатеринбурге девочка находится на операции
                   </span>
@@ -149,9 +146,8 @@
               </li>
               <li class="list__item">
                 <a href="" class="link _black">
-                  <svg class="news__agency-icon" width="14" height="14">
-                    <use href="#icon-rbk"></use>
-                  </svg>
+                  <span class="news__agency-icon ria">
+                  </span>
                   <span class="news__item-content"
                     >ФСБ задержала в Саратове 14 участников украинской
                     радикальной группировки</span
@@ -160,9 +156,8 @@
               </li>
               <li class="list__item">
                 <a href="" class="link _black">
-                  <svg class="news__agency-icon" width="14" height="14">
-                    <use href="#icon-gazeta"></use>
-                  </svg>
+                  <span class="news__agency-icon kom">
+                  </span>
                   <span class="news__item-content">
                     Роскомнадзор обратился к Disney из-за мультфильма с
                     героем-геем
@@ -369,12 +364,12 @@
               </li>
               <li class="services-new__list-item">
                 <a class="link _black services-new__item" href="">
-                  <div
-                    class="services-new__icon"
-                    style="
-                      background-image: url(//yastatic.net/s3/home/services/block/uslugi_new_v2.svg);
-                    "
-                  ></div>
+                  <div class="services-new__more-icons">
+                    <div class="services-new__more-icon services-new__more-icon_0" style="background-image:url(//yastatic.net/s3/home/services/block/new_lavka.svg)"></div>
+                    <div class="services-new__more-icon services-new__more-icon_1" style="background-image:url(//yastatic.net/s3/home/services/block/uslugi_new_v2.svg)"></div>
+                    <div class="services-new__more-icon services-new__more-icon_2" style="background-image:url(//yastatic.net/s3/home/services/block/direct.svg)"></div>
+                    <div class="services-new__more-icon services-new__more-icon_3" style="background-image:url(//yastatic.net/s3/home/services/block/radio.svg)"></div>
+                  </div>
                   <div class="services-new__item-title">ещё</div>
                 </a>
               </li>

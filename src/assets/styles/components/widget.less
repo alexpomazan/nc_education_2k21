@@ -1,0 +1,20 @@
+.widgets {
+    display: flex;
+    margin-top: -4px;
+    &__col{
+      &.td-0{
+        flex: 100 0 auto;
+        max-width: 66.6%;
+      }
+      &.td-1{
+        flex: 1 1 auto;
+        max-width: 33.3%;
+        & .widget{
+          margin-bottom: 9px;
+        }
+      }
+    }
+}
+.widget {
+  padding: 0 4px 4px 20px;
+}

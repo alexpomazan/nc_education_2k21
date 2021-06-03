@@ -1,0 +1,81 @@
+.news{
+ &__tabs {
+    display: flex;
+    align-items: flex-start;
+    margin-right: 18px;
+    padding-top: 4px;
+
+  }   
+  &__head-item {
+    margin-top: 0;
+    padding-top: 0;
+    display: inline-block;
+    margin-bottom: 8px;
+    margin-right: 12px;
+  }
+  &__list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    & .list__item{
+    margin-bottom: 8px;
+        & .link{
+            padding-left: 22px;
+        }
+    }
+  }
+  &__agency-icon{
+    display: inline-block;
+    margin: -3px 7px 0 -21px;
+    width: 14px;
+    height: 14px;
+    vertical-align: middle;
+    background-image: url("https://avatars.mds.yandex.net/get-ynews-logo/28627/254083361-1516267195536-square/logo-square");
+    background-size: contain;
+      &.rt{
+        background-image: url("https://avatars.mds.yandex.net/get-ynews-logo/28627/254083361-1516267195536-square/logo-square");
+      }
+      &.ria{
+        background-image: url("https://avatars.mds.yandex.net/get-ynews-logo/135513/1002-1544074003449-square/logo-square");
+      }
+      &.kom{
+        background-image: url("https://avatars.mds.yandex.net/get-ynews-logo/26056/1048-1478692902313-square/logo-square");
+      }
+      &.inter{
+        background-image: url("https://avatars.mds.yandex.net/get-ynews-logo/26056/1114-1478692903988-square/logo-square");
+      }
+  }
+}
+  .stocks{
+    display: flex;
+    font-size: .93em;
+    &__item{
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      margin-right: 16px;
+      margin-bottom: 9px;
+    }
+    &__link{
+      letter-spacing: .6px;
+      margin-right: 6px;
+      font-weight: 500;
+      text-transform: uppercase;
+    }
+    &__cell{
+      margin: -2px -2px -2px 7px;
+      padding: 3px 0;
+      color: #999;
+    }
+    &__more-icon{
+      display: inline-block;
+      width: 15px;
+      height: 19px;
+      opacity: .2;
+      background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' width='15' height='15' viewBox='0 0 15 15'%3E%3Cellipse cx='2.5' cy='7.5' rx='1.5' ry='1.5'/%3E%3Cellipse cx='7.5' cy='7.5' rx='1.5' ry='1.5'/%3E%3Cellipse cx='12.5' cy='7.5' rx='1.5' ry='1.5'/%3E%3C/svg%3E");
+      background-position: 50% 50%;
+      &:hover{
+        opacity: .3;
+      }
+    }
+  }

@@ -1,0 +1,70 @@
+.headline {
+    display: flex;
+    justify-content: space-between;
+    color: @grey;
+    margin: 5px 200px 0 auto;
+    padding: 0 6px 0 20px;
+    max-width: inherit;
+    line-height: 42px;
+    &__leftcorner {
+      display: flex;
+    }
+    &__geolink{
+      display: flex;
+      align-items: center;
+      color: @grey;
+      text-decoration: none;
+      outline: none;
+      font-weight: 700;
+      padding-right: 16px;
+    }
+    &__item {
+        height: 42px;
+      }
+  }
+  .headline,
+  .datatime {
+    font-size: 0.93em;
+  }
+  .datatime {
+    display: flex;
+    font-family: Verdana, Arial, Helvetica, sans-serif;
+    padding-right: 24px;
+    &__time-link{
+      display: flex;
+    }
+  }
+  .geolink{
+      &__reg{
+        text-align: center;
+    }
+    &__button {
+        width: 14px;
+        height: 14px;
+        margin-right: 6px;
+        position: relative;
+        vertical-align: middle;
+        margin-top: -4px;
+      }
+  }
+  .market-cart__icon-svg,
+  .notifier__icon-svg {
+    opacity: 0.24;
+    cursor: pointer;
+    &:hover{
+      opacity: .32;
+    }
+  }
+  .notifier__icon-svg {
+  padding-left: 6px;
+  }
+  ._hiden .datatime__flicker {
+    opacity: 0;
+  }
+
+  @media (min-width: 1600px){
+    .headline {
+    font-size: 1em;
+    margin-right: 220px;
+    }
+  }
