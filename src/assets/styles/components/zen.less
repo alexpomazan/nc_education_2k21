@@ -1,5 +1,40 @@
 .zen{
+    &__header{
+        display: flex;
+        align-items: baseline;
+        padding: 11px 0 3px;
+        margin-left: 23px;
+    }
+    &__title{
+        position: relative;
+        display: flex;
+        font-size: 123.1%;
+        font-weight: 500;
+        & h1{
+            margin: 0;
+        }
+        &-icon{
+            background-image: url(https://yastatic.net/s3/home/feed/services/icons/zen1.svg);
+            position: absolute;
+            left: 0;
+            top: 50%;
+            margin-top: -10px;
+            width: 20px;
+            height: 20px;
+            background-size: contain;
+            background-repeat: no-repeat;
+        }
+        &-text{
+            min-height: 20px;
+            padding-left: 26px;
+        }
+    }
+    &__desc{
+        margin: 0 0 0 6px;
+        opacity: .4;
+    }
     &__content{
+        padding-top: 8px;
         margin-left: 23px;
     }
     &__row{
